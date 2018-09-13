@@ -1,0 +1,52 @@
+{
+  "name": "sgb9-components",
+  "version": "0.0.1",
+  "description": "Sgb9 Components Starter",
+  "module": "dist/esm/index.js",
+  "main": "dist/sgb9.js",
+  "types": "dist/types/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "stencil build",
+    "start": "stencil build --dev --watch --serve",
+    "test": "jest",
+    "test.watch": "jest --watch"
+  },
+  "dependencies": {
+    "stencil": "0.0.5"
+  },
+  "devDependencies": {
+    "@stencil/core": "^0.11.0",
+    "@types/jest": "^23.3.1",
+    "jest": "^23.4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serkoma/sgb9-components.git"
+  },
+  "author": {
+    "name": "Serkom Team",
+    "email": "khs@serkom.de"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/serkoma/sgb9"
+  },
+  "homepage": "https://github.com/serkoma/sgb9",
+  "jest": {
+    "transform": {
+      "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/sgb9-components/testing/jest.preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(tsx?|jsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json",
+      "jsx"
+    ]
+  }
+}
